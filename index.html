@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ jQuery</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="accordion">
+        <div class="card">
+            <div class="card-header">
+                <h3>card-heading</h3>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, assumenda! Eius dolor odit vel
+                    ullam exercitationem tempore velit recusandae quos, voluptatem laudantium adipisci similique quidem
+                    blanditiis sequi quam ex fugit repellat consectetur a totam voluptatum facere! Quas ab excepturi
+                    possimus sapiente eos voluptates voluptate fugiat autem, explicabo eum laborum consectetur.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>card-heading</h3>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, assumenda! Eius dolor odit vel
+                    ullam exercitationem tempore velit recusandae quos, voluptatem laudantium adipisci similique quidem
+                    blanditiis sequi quam ex fugit repellat consectetur a totam voluptatum facere! Quas ab excepturi
+                    possimus sapiente eos voluptates voluptate fugiat autem, explicabo eum laborum consectetur.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>card-heading</h3>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, assumenda! Eius dolor odit vel
+                    ullam exercitationem tempore velit recusandae quos, voluptatem laudantium adipisci similique quidem
+                    blanditiis sequi quam ex fugit repellat consectetur a totam voluptatum facere! Quas ab excepturi
+                    possimus sapiente eos voluptates voluptate fugiat autem, explicabo eum laborum consectetur.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".card-header").click(function () {
+                if ($(this).next(".card-body").hasClass("active")) {
+                    $(this).next(".card-body").removeClass("active").slideUp()
+                    $(this).children("i").removeClass("fa-minus").addClass("fa-plus")
+                } else {
+                    $(".card .card-body").removeClass("active").slideUp()
+                    $(".card .card-header i").removeClass("fa-minus").addClass("fa-plus")
+                    $(this).next(".card-body").addClass("active").slideDown()
+                    $(this).children("i").removeClass("fa-plus").addClass("fa-minus")
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

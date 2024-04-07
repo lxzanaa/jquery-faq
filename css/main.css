@@ -1,0 +1,61 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.accordion {
+    max-width: 600px;
+    display: block;
+    margin: 100px auto;
+}
+
+.accordion .card {
+    box-shadow: 0 0 20px #d4d4d4;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+.accordion .card .card-header h3 {
+    cursor: pointer;
+    color: white;
+    position: relative;
+    margin: 0%;
+    padding: 15px 20px;
+    background-color: #3343a2;
+    text-transform: capitalize;
+}
+
+.accordion .card .card-header {
+    position: relative;
+}
+
+.accordion .card .card-header i {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: 25px;
+    width: 25px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    font-weight: 900;
+    padding-top: 6px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.accordion .card .card-body p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #444444;
+    margin: 0%;
+}
+.accordion .card .card-body{
+    display: none;
+}
